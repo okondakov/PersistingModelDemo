@@ -1,2 +1,2 @@
-# PersistingModelDemo
-Demo app that shows how to use the same UI with different database implementations (ORMLite and Firebase)
+The sources is currently located at:
+https://github.com/okondakov/OrmLiteTestDraft

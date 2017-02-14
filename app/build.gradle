@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.ls.modelpersistingdemo"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        ormlite {
+        }
+
+        firebase {
+        }
+    }
+
+    sourceSets {
+        ormlite {
+            java.srcDirs = ['/src/ormlite/java']
+        }
+        firebase {
+            java.srcDirs = ['/src/firebase/java']
+        }
+    }
+}
+
+dependencies {
+    compile ('com.android.support:appcompat-v7:22.2.1')
+    compile ('com.android.support:recyclerview-v7:22.0.0')
+
+    compile group: 'com.j256.ormlite', name: 'ormlite-core', version: '4.45'
+    compile group: 'com.j256.ormlite', name: 'ormlite-android', version: '4.45'
+
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    compile 'com.google.gms:google-services:3.0.0'
+
+    apply plugin: 'com.google.gms.google-services'
+}

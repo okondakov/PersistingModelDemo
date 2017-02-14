@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Persisting Model Demo</string>
+
+    <string name="organizations">Organizations</string>
+    <string name="add_organization">Add Organization</string>
+    <string name="update_organization">Update Organization</string>
+    <string name="members">Members</string>
+    <string name="add_member">Add Member</string>
+    <string name="update_member">Update Member</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="name">Name</string>
+    <string name="year_of_foundation">Year of foundation</string>
+    <string name="year_of_foundation_exception">Year of foundation must be an integer</string>
+    <string name="full_name">Full name</string>
+    <string name="position">Position</string>
+    <string name="organization">Organization</string>
+    <string name="select_one">Select One</string>
+
+
+</resources>
